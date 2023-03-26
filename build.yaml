@@ -12,6 +12,6 @@
 #     shield: reviung41
 #
 ---
+
 include:
-  - board: nrf52840dk_nrf52840
-    shield: chalice
+  - board: alice
