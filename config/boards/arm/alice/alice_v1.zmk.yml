@@ -1,0 +1,12 @@
+file_format: "1"
+id: alice_v1
+name: Alice Rev1 BOARD
+type: board
+arch: arm
+features:
+  - keys
+  - RGB
+outputs:
+  - usb
+  - ble
+url: none
