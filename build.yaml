@@ -14,4 +14,4 @@
 ---
 
 include:
-  - board: nrf52_adafruit_feather
+  - board: alice_v1
