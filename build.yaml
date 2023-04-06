@@ -14,4 +14,4 @@
 ---
 
 include:
-  - board: alice
+  - board: nrf52840dk_nrf52840
