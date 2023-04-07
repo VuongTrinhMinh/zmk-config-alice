@@ -8,7 +8,7 @@
     ],
     "layers": [
       [
-          "&kp GRAVE",   "&kp N1",   
+          "&bt BT_CLR",   "&kp N1",   
             "&out OUT_TOG",    "&kp Q"  
 
       ], [
