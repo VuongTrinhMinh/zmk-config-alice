@@ -11,8 +11,8 @@
 
         default_layer {
             bindings = <
-                &ext_power EP_TOG     &kp N1   
-                  &kp TAB     &kp Q   
+                &kp GRAVE     &kp N1   
+                  &out OUT_TOG     &kp Q   
             >;
         };
 
