@@ -9,7 +9,7 @@
     "layers": [
       [
           "&kp GRAVE",   "&kp N1",   
-            "&kp TAB",    "&kp Q"  
+            "&ext_power EP_TOG",    "&kp Q"  
 
       ], [
                    "&kp ESC",          "&kp F1",         
