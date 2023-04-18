@@ -12,7 +12,7 @@
         default_layer {
             bindings = <
                 &bt BT_CLR     &kp N1   
-                  &out OUT_TOG     &kp Q   
+                  &out OUT_TOG     &kp Q  &kp R 
             >;
         };
 
