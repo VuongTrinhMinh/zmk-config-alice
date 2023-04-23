@@ -72,8 +72,7 @@
 		output-ohms = <10000000>;
 		full-ohms = <(10000000 + 4000000)>;
 	};
-
-left_encoder: encoder_left {
+ left_encoder: encoder_left {
         compatible = "alps,ec11";
         label = "LEFT_ENCODER";
         a-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -81,6 +80,8 @@ left_encoder: encoder_left {
         resolution = <2>;
 		status = "okay";
     };
+};
+
 &spi3 {
 	mosi-pin = <17>;
 	// Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
