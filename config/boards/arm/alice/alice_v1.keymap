@@ -28,7 +28,7 @@
 			    &bootloader       &none            &none             &none               &none            &none                &none    &none      &none    &none     &none        &none     &none        &none       &none       &none
 			    &out OUT_TOG      &bt BT_SEL 1     &bt BT_SEL 2      &none               &none            &none                &none    &none      &none    &none     &none        &none     &none        &bt BT_CLR              &none 
 			    &rgb_ug RGB_TOG   &rgb_ug RGB_EF   &rgb_ug RGB_HUI   &rgb_ug RGB_SAI     &rgb_ug RGB_BRI  &rgb_ug RGB_SPI      &none    &none      &none    &none     &none        &none     &none        &none       &none       &none
-			    &rgb_ug RGB_EFR   &rgb_ug RGB_BRD  &none             &none               &none            &none                &none    &none      &none    &none     &none        &none     &none        &none                   &none 
+			    &rgb_ug RGB_EFR   &none            &none             &none               &none            &none                &none    &none      &none    &none     &none        &none     &none        &none                   &none 
 			    &rgb_ug RGB_HUD   &rgb_ug RGB_SPD  &none             &none               &none            &none                &none    &none      &none    &none     &none        &none     &none        &none       &none       
 			    &rgb_ug RGB_SAD   &none            &none             &none               &none                                          &none               &none                  &none     &none        &bt BT_PRV  &none       &bt BT_NXT
 			>;
