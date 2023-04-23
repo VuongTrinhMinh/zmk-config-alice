@@ -18,7 +18,6 @@
 		compatible = "zmk,keymap-sensors";
 		sensors = <&left_encoder>;
 	};
-
 	default_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
 		columns = <16>;
@@ -82,7 +81,7 @@
         resolution = <2>;
 		status = "okay";
     };
-&spi1 {
+&spi3 {
 	mosi-pin = <17>;
 	// Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
 	sck-pin = <48>;
