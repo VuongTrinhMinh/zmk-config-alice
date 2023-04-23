@@ -14,10 +14,10 @@
 		zmk,underglow = &led_strip;
 		zmk,battery = &vbatt;
 	};
-/*	sensors {
+	sensors {
 		compatible = "zmk,keymap-sensors";
 		sensors = <&left_encoder>;
-	}; */
+	};
 	default_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
 		columns = <16>;
@@ -72,34 +72,36 @@
 		output-ohms = <10000000>;
 		full-ohms = <(10000000 + 4000000)>;
 	};
- /*	left_encoder: encoder_left {
+	left_encoder: encoder_left {
         compatible = "alps,ec11";
         label = "LEFT_ENCODER";
         a-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 27  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <2>;
 		status = "okay";
-    }; */
+    };
 };
 
-&spi3 {
-	mosi-pin = <17>;
-	// Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-	sck-pin = <48>;
-	miso-pin = <52>;
+&spi1 {
+  status = "okay";
 
-	led_strip: ws2812@0 {
-		compatible = "worldsemi,ws2812-spi";
-		label = "WS2812";
+  mosi-pin = <4>;
+  // Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
+  sck-pin = <6>;
+  miso-pin = <8>;
 
-		/* SPI */
-		reg = <0>; /* ignored, but necessary for SPI bindings */
-		spi-max-frequency = <4000000>;
+  led_strip: ws2812@0 {
+    compatible = "worldsemi,ws2812-spi";
+    label = "WS2812";
 
-		/* WS2812 */
-		chain-length = <18>; /* LED strip length */
-		spi-one-frame = <0x70>;
-		spi-zero-frame = <0x40>;
-		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
-	};
+    /* SPI */
+    reg = <0>; /* ignored, but necessary for SPI bindings */
+    spi-max-frequency = <4000000>;
+
+    /* WS2812 */
+    chain-length = <20>; /* number of LEDs */
+    spi-one-frame = <0x70>;
+    spi-zero-frame = <0x40>;
+    color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+  };
 };
