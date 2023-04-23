@@ -72,8 +72,8 @@
 		output-ohms = <10000000>;
 		full-ohms = <(10000000 + 4000000)>;
 	};
-};
-    left_encoder: encoder_left {
+
+left_encoder: encoder_left {
         compatible = "alps,ec11";
         label = "LEFT_ENCODER";
         a-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
