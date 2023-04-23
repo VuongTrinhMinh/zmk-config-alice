@@ -39,6 +39,9 @@
 &usbd {
 	status = "okay";
 };
+&spi3 {
+  compatible = "nordic,nrf-spim";
+};
 &flash0 {
 	/*
 	 * For more information, see:
