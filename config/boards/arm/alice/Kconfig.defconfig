@@ -26,6 +26,6 @@ config ZMK_USB
 	default y
 
 config ZMK_KEYBOARD_NAME
-	default "alice Rev1"
+	default "Alice Rev1"
 
 endif # BOARD_ALICE_v1
