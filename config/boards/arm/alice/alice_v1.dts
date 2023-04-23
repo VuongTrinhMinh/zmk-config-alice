@@ -62,14 +62,6 @@
 			, <&gpio0 01 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
 	};
-encoder: encoder{
-        compatible = "alps,ec11";
-        label = "ENCODER";
-        a-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio0 27  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <2>;
-		status = "okay";
-    };
 	vbatt: vbatt {
 		compatible = "zmk,battery-voltage-divider";
 		label = "BATTERY";
