@@ -66,10 +66,11 @@
 			, <&gpio0 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
 	};
+	
 	vbatt: vbatt {
 		compatible = "zmk,battery-voltage-divider";
 		label = "BATTERY";
-		io-channels = <&adc 2>;
+		io-channels = <&adc 1>;
 		output-ohms = <10000000>;
 		full-ohms = <(10000000 + 4000000)>;
 	};
