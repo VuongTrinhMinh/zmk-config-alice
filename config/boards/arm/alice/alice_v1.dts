@@ -86,7 +86,7 @@
 &spi1 {
   status = "okay";
 
-  mosi-pin = <4>;
+  mosi-pin = <17>;
   // Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
   sck-pin = <5>;
   miso-pin = <7>;
@@ -99,7 +99,7 @@
     reg = <0>; /* ignored, but necessary for SPI bindings */
     spi-max-frequency = <4000000>;
     /* WS2812 */
-    chain-length = <20>; /* number of LEDs */
+    chain-length = <106>; /* number of LEDs */
     spi-one-frame = <0x70>;
     spi-zero-frame = <0x40>;
     color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
