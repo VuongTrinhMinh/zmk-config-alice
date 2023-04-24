@@ -45,7 +45,7 @@
 			, <&gpio0 29 GPIO_ACTIVE_HIGH>        //4
 			, <&gpio0 28 GPIO_ACTIVE_HIGH>         //5
 			, <&gpio0 30 GPIO_ACTIVE_HIGH>       //6
-			, <&gpio0 5  GPIO_ACTIVE_HIGH>       //7
+			, <&gpio0 4  GPIO_ACTIVE_HIGH>       //7
 			, <&gpio0 19 GPIO_ACTIVE_HIGH>      //8
 			, <&gpio0 13 GPIO_ACTIVE_HIGH>     //9
 			, <&gpio0 15 GPIO_ACTIVE_HIGH>    //10
