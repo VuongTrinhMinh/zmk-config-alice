@@ -89,7 +89,7 @@
 &pinctrl {
     spi3_default: spi3_default {
         group1 {
-            psels = <NRF_PSEL(SPIM_MOSI, 0, 26)>;
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 26)>,
 					<NRF_PSEL(SPIM_SCK, 0, 14)>,
 					<NRF_PSEL(SPIM_MISO, 0, 16)>;
         };
@@ -97,7 +97,7 @@
 
     spi3_sleep: spi3_sleep {
         group1 {
-            psels = <NRF_PSEL(SPIM_MOSI, 0, 26)>;
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 26)>,
 					<NRF_PSEL(SPIM_SCK, 0, 14)>,
 					<NRF_PSEL(SPIM_MISO, 0, 16)>;
             low-power-enable;
