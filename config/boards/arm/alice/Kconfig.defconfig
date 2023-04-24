@@ -24,6 +24,8 @@ config ZMK_BLE
 
 config ZMK_USB
 	default y
+config SPI
+	default y
 
 config ZMK_KEYBOARD_NAME
 	default "ZoZo"
