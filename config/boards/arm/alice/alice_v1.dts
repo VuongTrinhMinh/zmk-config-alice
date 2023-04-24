@@ -63,7 +63,7 @@
 			, <&gpio1 08 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio0 00 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 01 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
 	};
 	vbatt: vbatt {
@@ -85,10 +85,10 @@
 &spi1 {
   status = "okay";
 
-  mosi-pin = <4>;
+  mosi-pin = <17>;
   // Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-  sck-pin = <6>;
-  miso-pin = <8>;
+  sck-pin = <2>;
+  miso-pin = <3>;
 
   led_strip: ws2812@0 {
     compatible = "worldsemi,ws2812-spi";
@@ -97,7 +97,6 @@
     /* SPI */
     reg = <0>; /* ignored, but necessary for SPI bindings */
     spi-max-frequency = <4000000>;
-
     /* WS2812 */
     chain-length = <20>; /* number of LEDs */
     spi-one-frame = <0x70>;
