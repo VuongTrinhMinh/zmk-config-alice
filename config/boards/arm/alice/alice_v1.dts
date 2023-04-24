@@ -40,12 +40,12 @@
 
 		col-gpios
 			= <&gpio1 13 GPIO_ACTIVE_HIGH>     //1
-			, <&gpio1 15 GPIO_ACTIVE_HIGH>    //2
-			, <&gpio0 2 GPIO_ACTIVE_HIGH>      //3
-			, <&gpio0 29 GPIO_ACTIVE_HIGH>  //4
+			, <&gpio1 15 GPIO_ACTIVE_HIGH>      //2
+			, <&gpio0 2  GPIO_ACTIVE_HIGH>      //3
+			, <&gpio0 29 GPIO_ACTIVE_HIGH>        //4
 			, <&gpio0 28 GPIO_ACTIVE_HIGH>         //5
 			, <&gpio0 30 GPIO_ACTIVE_HIGH>       //6
-			, <&gpio0 5 GPIO_ACTIVE_HIGH>       //7
+			, <&gpio0 5  GPIO_ACTIVE_HIGH>       //7
 			, <&gpio0 19 GPIO_ACTIVE_HIGH>      //8
 			, <&gpio0 13 GPIO_ACTIVE_HIGH>     //9
 			, <&gpio0 15 GPIO_ACTIVE_HIGH>    //10
@@ -58,12 +58,12 @@
 			;
 
 		row-gpios
-			= <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			= <&gpio0 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
 	};
 	vbatt: vbatt {

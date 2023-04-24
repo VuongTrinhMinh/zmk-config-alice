@@ -26,7 +26,7 @@ config ZMK_USB
 	default y
 
 config ZMK_KEYBOARD_NAME
-	default "Alice Rev1"
+	default "ZoZo"
 config ZMK_RGB_UNDERGLOW
 	select SPI
 	select WS2812_STRIP
