@@ -28,5 +28,5 @@ config SPI
 	default y
 
 config ZMK_KEYBOARD_NAME
-	default "ZoZo"
+	default "WhatTheFuck KB"
 endif # BOARD_ALICE_v1
